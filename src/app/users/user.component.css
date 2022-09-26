@@ -1,0 +1,75 @@
+
+.user-container {
+  width: 50%;
+  min-width: 630px;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.user-header {
+  padding: 1rem;
+  color: #000000;
+  background-color: #ffaa01;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-header button {
+  padding: 5px;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.user-body {
+  display: flex;
+  /* flex-grow: 1; */
+  height: 430px;
+}
+
+.channels-container {
+  width: 30%;
+  color: #000000;
+  background-color: #eae5a0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.channels-list {
+  flex-grow: 1;
+}
+
+.channels-list p {
+  padding: 5px;
+  border-bottom: 1px solid #828686;
+}
+
+.channel-create {
+  background-color: aliceblue;
+}
+
+.channel-create input {
+  width: 80%;
+  height: 2rem;
+  padding: 15px;
+  border: none;
+  background-color: inherit;
+  border-right: 1px solid #171717;
+}
+
+.channel-create button {
+  width: 20%;
+  border: none;
+  background-color: inherit;
+}
+
+.user-body .chat-container {
+  width: 70%;
+  background-color: dimgray;
+}

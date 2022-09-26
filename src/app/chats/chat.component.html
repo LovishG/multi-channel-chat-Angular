@@ -1,0 +1,22 @@
+<div *ngIf="isMember; else elseBlock" class="chat-box">
+  <div class="chat-header">
+    <h2>{{'#' + channel.name}}</h2>
+  </div>
+  <div class="messages-list">
+    <div *ngFor="let message of myMessages">
+      <mcr-message [message]="message"></mcr-message>
+    </div>
+  </div>
+
+  <div class="message-input">
+    <input type="text" placeholder="Type here..." [(ngModel)]="newMessage">
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>
+
+<ng-template #elseBlock>
+  <div class="join-chat">
+    <h2>Join First To Chat</h2>
+    <button (click)="joinChannel()">Join</button>
+  </div>
+</ng-template>

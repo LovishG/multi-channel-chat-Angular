@@ -1,0 +1,26 @@
+<div class="user-container">
+  <div class="user-header">
+    <h2>{{ user.name }}</h2>
+    <button (click)="logOut()">close</button>
+  </div>
+
+  <div class="user-body">
+    <div class="channels-container">
+      <div class="channel-create">
+        <input type="text" placeholder="channel-name" [(ngModel)]= "newChannel">
+        <button (click)="joinChannel()">&plus;</button>
+      </div>
+
+      <div class="channels-list">
+        <div *ngFor="let channel of myChannels">
+          <p style="cursor: pointer;" (click)="selectChannel(channel)">{{'# - ' + channel.name}}</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="chat-container">
+      <mcr-chat [user]="user" [channel] = "currentChannel"></mcr-chat>
+    </div>
+  </div>
+</div>

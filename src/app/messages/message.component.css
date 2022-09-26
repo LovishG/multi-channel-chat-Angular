@@ -1,0 +1,41 @@
+.messagebox {
+  padding: 10px;
+}
+
+.messagebox sub {
+  display: block;
+  font-size: 0.7em;
+}
+
+.message {
+  display: inline-block;
+}
+
+.message p {
+  border-radius: 10px;
+  font-size: 1.3em;
+  padding: 10px;
+  background-color: #77c7c4;
+}
+
+.message p sub {
+  display: inline;
+}
+
+/* .other {
+  text-align: left;
+}
+
+.self {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.self .message p {
+  background-color: #77c7c4;
+}
+
+.other .message p {
+  background-color: #a9b5b5;
+} */

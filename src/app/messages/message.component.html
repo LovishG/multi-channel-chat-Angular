@@ -1,0 +1,7 @@
+<div [ngClass] = "{'messagebox': true}">
+  <sub>{{ message.body.sender | getUserName }}</sub>
+  <div class="message">
+    <p> <span>{{ message.body.content }}</span></p>
+    <sub>{{ message.time | convertTimeToString }}</sub>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+.chat-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  color: white;
+  background-color:grey;
+  padding: 0 10px;
+}
+
+.join-chat {
+  height: 100%;
+  display: flex;
+  color: #000000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5f3f6;
+}
+
+.join-chat h2 {
+  margin: 1rem;
+}
+
+.messages-list {
+  flex-grow: 1;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #e5f3f6;
+}
+
+.message-input {
+  display: flex;
+  background-color: #fafbff;
+}
+
+.message-input input {
+  width: 80%;
+  height: 2.5rem;
+  padding: 1rem;
+  border: none;
+  background-color: inherit;
+  border-right: 1px solid #a4d2cf;
+}
+
+.message-input button {
+  width: 20%;
+  border: none;
+  background-color: inherit;
+}

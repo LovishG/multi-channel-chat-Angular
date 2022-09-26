@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="sign-in">
+    <input class="user" type="text" [(ngModel)]="newUser">
+    <button class="user-button" (click)="logInUser()">Log in</button>
+  </div>
+
+  <div class="users-container">
+    <div *ngFor="let user of users" trackBy="trackUser">
+      <mcr-user [user]="user" (logout)="logOutUser($event)"></mcr-user>
+    </div>
+  </div>
+</div>
